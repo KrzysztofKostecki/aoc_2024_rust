@@ -94,4 +94,3 @@ Feel free to open issues or PRs if you have suggestions for improvements!
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-> Note: Remember to replace input files with your own puzzle inputs, as sharing them is discouraged by Advent of Code.
