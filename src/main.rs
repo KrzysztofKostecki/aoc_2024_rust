@@ -17,8 +17,8 @@ fn main() {
         }
         "2" => {
             let input = std::fs::read_to_string("inputs/day02.txt").unwrap();
-            println!("Day 1 Part 1: {}", day02::part1(&input));
-            println!("Day 1 Part 2: {}", day02::part2(&input));
+            println!("Day 2 Part 1: {}", day02::part1(&input));
+            println!("Day 2 Part 2: {}", day02::part2(&input));
         }
         "3" => println!("Day 3: Not implemented yet"),
         "4" => println!("Day 4: Not implemented yet"),
