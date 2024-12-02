@@ -3,6 +3,7 @@ use std::env;
 mod utils;
 
 mod day01;
+mod day02;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -14,7 +15,11 @@ fn main() {
             println!("Day 1 Part 1: {}", day01::part1(&input));
             println!("Day 1 Part 2: {}", day01::part2(&input));
         }
-        "2" => print!("Day 2: Not implemented yet"),
+        "2" => {
+            let input = std::fs::read_to_string("inputs/day02.txt").unwrap();
+            println!("Day 1 Part 1: {}", day02::part1(&input));
+            println!("Day 1 Part 2: {}", day02::part2(&input));
+        }
         "3" => println!("Day 3: Not implemented yet"),
         "4" => println!("Day 4: Not implemented yet"),
         "5" => println!("Day 5: Not implemented yet"),
