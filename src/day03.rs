@@ -26,23 +26,9 @@ fn parse_input(input: &str, enable_conditional_logic: bool) -> Vec<(i32,i32)> {
 }
 
 pub fn part1(input: &str) -> i32 {
-    let valid_muls = parse_input(input, false);
-
-    let mut total = 0;
-    for (a, b) in valid_muls {
-        total += a * b;
-    }
-
-    total
+    parse_input(input, false).iter().map(|(a, b)| a * b).sum()
 }
 
 pub fn part2(input: &str) -> i32 {
-    let valid_muls = parse_input(input, true);
-
-    let mut total = 0;
-    for (a, b) in valid_muls {
-        total += a * b;
-    }
-
-    total
+    parse_input(input, true).iter().map(|(a, b)| a * b).sum()
 }
